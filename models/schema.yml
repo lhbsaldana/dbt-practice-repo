@@ -39,3 +39,10 @@ models:
           - relationships:
               to: ref('stg_customers')
               field: customer_id
+  - name: stg_payments 
+    columns: 
+      - name: payment_id
+        description: Primary key
+        tests:
+          - unique
+          - not_null
