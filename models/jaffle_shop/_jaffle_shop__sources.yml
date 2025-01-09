@@ -2,11 +2,13 @@ version: 2
 
 sources:
   - name: jaffle_shop
+    description: a clone of an application database 
     database: dbt-tutorial
     schema: jaffle_shop
 
     tables:
       - name: customers
+        description: raw customers data 
         freshness: null
         columns: 
           - name: id 
@@ -15,6 +17,7 @@ sources:
               - not_null 
 
       - name: orders
+        description: raw orders data 
         loaded_at_field: _etl_loaded_at
         freshness:
           warn_after: {count: 12, period: hour}
