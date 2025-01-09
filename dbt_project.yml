@@ -37,7 +37,7 @@ clean-targets:         # directories to be removed by `dbt clean`
 
 models:
   dbt-tutorial: # project name
-    jaffle_shop: 
-      +materialized: table
+    jaffle_shop:
+      +materialized: table # all of the tables in the dbt-tutorial project will be tables
     stripe:
-      +materialized: table
+      +materialized: table 
