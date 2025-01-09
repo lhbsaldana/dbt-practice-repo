@@ -1,4 +1,4 @@
-{ % docs status %  } <!-- order_status is the name of the doc block -->
+{% docs status %} <!-- order_status is the name of the doc block -->
 
 One of the following values: 
 
